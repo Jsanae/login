@@ -9,17 +9,18 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  public login(userInfo: User){
-    localStorage.setItem('ACCESS_TOKEN', "access_token");
-    this.http.get
-  }
-
-  public isLoggedIn(){
-    return localStorage.getItem('ACCESS_TOKEN') !== null;
+  public login(user: User) {
+    return this.http.get('http://2me1y.mocklab.io/DSAController?json=json&method=Login&login=' + user.username + '&password=' + user.password);
+    //localStorage.setItem('Authorization', "access_token");
 
   }
 
-  public logout(){
-    localStorage.removeItem('ACCESS_TOKEN');
+  public isLoggedIn() {
+    return localStorage.getItem('Authorization') !== null;
+
+  }
+
+  public logout() {
+    localStorage.removeItem('Authorization');
   }
 }

@@ -1,8 +1,9 @@
 <h1 style="text-align:center">
-  Angular Login Example
+Login
 </h1>
 <div class="login">
   <h2 class="login-header">Log in</h2>
+  <p style="color: red">{{ error?.msg}}</p>
   <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
 
     <p [ngClass]="{ 'has-error': isSubmitted && formControls.username.errors }">
