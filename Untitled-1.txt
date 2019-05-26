@@ -1,0 +1,6 @@
+C:\Users\Administrator\AppData\Roaming\npm\node_modules\angular-cli\bin\ng
+
+Source: https://prograide.com/pregunta/20291/ng-n39est-pas-reconnu-comme-une-commande-interne-ou-externe
+C:\Users\Administrator\AppData\Roaming\npm\node_modules\angular-cli\bin\ng
+
+Source: https://prograide.com/pregunta/20291/ng-n39est-pas-reconnu-comme-une-commande-interne-ou-externe
